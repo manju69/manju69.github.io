@@ -1,16 +1,21 @@
 body{
-    background-color: lightpink;
+   font-family: Arial, Helvetica, sans-serif;
+
 }
 h2{
-    color: black;
+   background-color: lightgray;
     text-decoration: underline;
 }
 h3{
     font-family: Arial;
+    color: navy ;
 }
 a{
     color:red;
 }
-div{
+.align-img{
     display: inline;
+}
+.align-text{
+    font-style: italic;
 }
