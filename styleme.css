@@ -15,6 +15,7 @@ a{
 }
 .align-img{
     display: inline;
+    word-spacing: 0.25em;
 }
 .align-text{
     font-style: italic;
