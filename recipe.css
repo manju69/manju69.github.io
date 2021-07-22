@@ -28,7 +28,7 @@ h2{
 
 .display-pre{
       text-align:right ;
-      font:monospace;
+      font-family:monospace;
       justify-content: right;
   }
   
