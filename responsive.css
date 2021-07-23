@@ -1,46 +1,82 @@
 .header{
+    width: 100%;
+    background-color: #61ba00;
+    padding: 10px 0;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: lightsteelblue;
-    padding: 1px;
 }
+
 .menu{
-    background-color: darkslategrey;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    min-height: 8vh;
-    
+    background-color: #144B8E;
 }
 .menu-item{
-    border: 1px solid black;
-    width: 7vw;
-    text-align: center;
-    vertical-align: middle;
-}
-.columns{
-    min-height: 69vh;
     display: flex;
+    color: yellow;
+    border: 1px solid black;
+    padding: 10px 10px 0 10px;
+    width: 50px;
+    height: 30px;
+}
+.column{
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    text-align: center
 }
-.item1{
-    background-color: gray;
-
+.column-item{
+    font-size: 24pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
 }
-.item2{
-    background-color: lightslategray;
-}
-.item3{
-    background-color: lightgray;
-}
-
-.footer{
-    background-color: darkslategrey;
-    min-height: 8vh;
-    text-align: center;
+.column-A{
+    background-color: #6e6e6e;
+    color: white;
+    flex-grow: 1;
+    min-width: 200px;
     vertical-align: middle;
+    text-align: center;
 }
-@media only screen and(max-width: 600px){
-    
+.column-B{
+    background-color: #8c8c8c;
+    flex-grow: 2;
+    color: white;
+    min-width: 400px;
+}
+.column-C{
+    flex-grow: 2;
+    background-color: #282c34;
+    color: white;
+    min-width: 200px;
+    vertical-align: middle;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    height: 50px;
+}
+.span-text{
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px){
+    .column-item{
+        height: 650px;
+        font-size: 48pt;
+    }
+    .column-A{
+        min-width: 300px;
+    }
+    .column-B{
+        min-width: 500px;
+    }
+    .column-C{
+        min-width: 300px;
+    }
 }
