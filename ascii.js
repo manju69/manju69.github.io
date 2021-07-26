@@ -1,4 +1,6 @@
-"use strict";
+(function () {
+    'use strict';
+ }());
 var interval = null;
 var delay = 250;
 var time = 0;
