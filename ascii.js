@@ -1,4 +1,3 @@
-
 var interval = null;
 var delay = 250;
 var time = 0;
@@ -7,7 +6,7 @@ var textArea;
 var ANIMATIONS = [];
 
 window.onload = function(){
-   
+    'use strict';
     textArea = document.getElementById("text-area");
     document.getElementById("start").onclick = startAnimation;
     document.getElementById("animation").onchange = chooseAnimation;
@@ -16,6 +15,7 @@ window.onload = function(){
     document.getElementById("turbo").onchange = chooseTurbo;};
 
 function startAnimation(){
+    'use strict';
     document.getElementById("start").disabled = true;
     document.getElementById("stop").disabled = false;
     document.getElementById("animation").disabled = true;
@@ -23,16 +23,19 @@ function startAnimation(){
     interval = setInterval(playAnimation,delay);
 }
 function playAnimation(){
+    'use strict';
     textArea.value = ANIMATIONS[animationType].split("=====\n")[time];
     time++;
     time = time %  ANIMATIONS[animationType].split("=====\n").length;
 }
 
 function chooseAnimation(e){
+    'use strict';
     animationType = e.target.value;
 }
 
 function stopAnimation(){
+    'use strict';
     clearInterval(interval);
     document.getElementById("start").disabled = false;
     document.getElementById("stop").disabled = true;
@@ -41,6 +44,7 @@ function stopAnimation(){
 }
 
 function chooseFontsize(e){
+    'use strict';
     let fontSize= 0;
     switch(e.target.value){
         case "Tiny":
@@ -68,6 +72,7 @@ function chooseFontsize(e){
 }
 
 function chooseTurbo(e){
+    'use strict';
    delay= (e.target.checked)? 50: 250;
     clearInterval(interval);
     interval = setInterval(playAnimation,delay);
