@@ -73,7 +73,7 @@ function chooseFontsize(e){
 
 function chooseTurbo(e){
     'use strict';
-   delay= (e.target.checked)? 50: 250;
+    delay= (e.target.checked)? 50: 250;
     clearInterval(interval);
     interval = setInterval(playAnimation,delay);
 }
