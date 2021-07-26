@@ -47,5 +47,5 @@ select{
 }
 #validate{
     right:0px;
-    position: fixed;
+    position: absolute;
 }

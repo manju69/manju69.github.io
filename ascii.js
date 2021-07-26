@@ -1,11 +1,13 @@
-"use strict";
+
 var interval = null;
 var delay = 250;
 var time = 0;
 var animationType = "EXERCISE";
 var textArea;
+var ANIMATIONS = [];
 
 window.onload = function(){
+    "use strict";
     textArea = document.getElementById("text-area");
     document.getElementById("start").onclick = startAnimation;
     document.getElementById("animation").onchange = chooseAnimation;
