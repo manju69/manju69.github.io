@@ -1,0 +1,29 @@
+div{
+    border: 1px solid black;
+    min-height: 00px;
+}
+.container{
+    display:grid;
+    grid-template-areas: 
+    'some some text text'
+    'some here there there';
+   
+}
+#some{
+    grid-row: 1 /span 2;
+    grid-column: 2 /span 1;
+    background-color: grey;
+    text-align: center;
+   
+}
+#text{
+    grid-column: 3 / span 2;
+    background-color: lightslategrey;
+}
+#here{
+    
+    background-color: lightgray;
+}
+#there{
+    grid-column: 3 /span 2;
+}

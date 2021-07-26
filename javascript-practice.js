@@ -19,7 +19,7 @@ function myFunctionTest(expected, found) {
   console.assert(max(20, 10)===20, 'Expected output of max(20,10) is 20');
   console.assert(maxOfThree(20, 10,30)===30, "Expected output of maxOfThree(20,10,30) is 30");
   console.assert(isVowel('a')===true, "Expected output of isVowel('a') is true  ");
-  console.assert(sum([20, 10]===30, "Expected output of sum([20,10]) is 30  " );
+  console.assert(sum([20, 10]===30, "Expected output of sum([20,10]) is 30  " ));
   console.assert(multiply([20, 10]===200, "Expected output of multiply([20,10]) is 200  ");
   console.assert(reverse('manju')==='ujnam', "Expected output of reverse('manju') is 'ujnam'");
   console.assert(findLongestWord(['this','is','the','longest','word'])===7, "Expected output of max(20,10) is 20");
@@ -141,3 +141,14 @@ console.assert(d===135, "Expected output of d is 135 ");
   console.log("Expected output of b is [3,9,15,9,9]  " + myArrayTest([3,9,15,9,9], b));
   console.log("Expected output of c is [3,3,3]  " + myArrayTest([3,3,3], c));
   console.log("Expected output of d is 135  " + myFunctionTest(135, d));
+
+  function shortest(str1,str2,str3){
+      if(str1.length<str2.length){
+          if(str1.length<str3.length){
+            return str1.length;
+          }
+      }else if(str2.length<str3.log){
+        return str2.length;
+      }else
+        return str3.length;
+  }
