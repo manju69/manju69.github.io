@@ -1,0 +1,121 @@
+body{
+    font-size: x-large;
+    margin: 0px;
+}
+
+
+.header{
+    width: 100%;
+    background-color: rgb(100, 177, 240);
+    color: white;
+    font-size: 20pt;
+    height: 45px;
+    vertical-align: middle;
+    padding: 10pt;
+}
+
+.header-text{
+    font-size: 14pt;
+    padding-left: 12pt;
+    padding-right: 12pt;
+    
+}
+.signout{
+    display: inline;
+    position: absolute;
+    right: 20px;
+    vertical-align: middle;
+    font-size: 14pt;
+}
+.signout-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: grey;
+    font-size: 12pt;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h3{
+ color: gray;
+
+}
+.buttons{
+    position: absolute;
+    right: 150px;
+    bottom: 30px;
+}
+.reset{
+border: 1.5px solid rgb(18, 18, 83);
+height: 40px;
+border-radius: 6px;
+margin-right: 10px;
+}
+.cancel{
+    border: 1.5px solid rgb(180, 102, 49);
+    height: 40px;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.add-product{
+    border: 1.5px solid skyblue;
+    height: 40px;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.valid-date{
+    opacity: 70%;
+    font-size: medium;
+}
+.input-size{
+    height: 40px;
+    width: 90%;
+    border-radius: 8px;
+    border: 1.5px solid lightslategray;
+    opacity: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+label{
+    font-size: 14pt;
+    color: gray;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'product quantity'
+    'name supplier'
+    'unit date'
+    'blank button';
+}
+.product{
+    grid-area: product;
+}
+.quantity{
+    grid-area: quantity;
+}
+.name{
+    grid-area: name;
+}
+.supplier{
+    grid-area: supplier;
+}
+.unit{
+    grid-area: unit;
+}
+#date{
+    grid-area: date;
+}
+.button{
+    grid-area: button;
+}
+.blank{
+    grid-area: blank;
+}
+

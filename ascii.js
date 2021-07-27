@@ -3,7 +3,6 @@ var delay = 250;
 var time = 0;
 var animationType = "EXERCISE";
 var textArea;
-var ANIMATIONS = [];
 
 window.onload = function(){
     'use strict';

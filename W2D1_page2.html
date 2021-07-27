@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 page 2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="W1D2_page2.css">
+</head>
+
+<body>
+    <div class="header">
+        <span>MUM Golden Dome Marker :::: SRM System</span>
+        <span class="header-text">|</span>
+        <span class="header-text"> Product</span>
+        <span class="header-text">|</span>
+        <span class="header-text"> Supplier</span>
+        <div class="signout ">Hello! <input type="submit" value="Sign Out" class="signout-btn"></div>
+    </div>
+
+    <div class="container ">
+        <h3>New Product Form</h3>
+        <form >
+        <div class="grid-container">
+            <div class="product">
+                <label for="productNum">Product Number</label><br>
+                <input type="text" id="productNum" class="input-size" >
+            </div>
+            <div class="name">
+                <label for="Name">Name</label><br>
+                <input type="text" id="Name" class="input-size" >
+            </div>
+            <div class="unit">
+                <label for="unitPrice">Unit Price</label><br>
+                <input type="number" id="unitPrice"  value="0.0" class="input-size">
+            </div> 
+            <div class="quantity">
+                <label for="inStock">Quantity in Stock</label><br>
+                <input type="number" id="inStock" size="60"  value="0" class="input-size" >
+            </div>
+            <div class="supplier">
+                <label for="supplier">Supplier</label><br>
+                <select name="" id="supplier" class="input-size">
+                    <option value="">Select a Supplier</option>
+                </select> 
+            </div>
+            <div class="date">
+                <label for="dateSupplied">Date Supplied</label><br>
+                <input type="text" id="dateSupplied"  value="yyyy-mm-dd" class="input-size"><br>
+                <span class="valid-date">Enter a valid date</span>
+            </div>
+            <div class="button buttons">
+                <input type="submit" value="Reset" class="reset">
+                <input type="submit" value="Cancel" class="cancel">
+                <input type="submit" value="Add Product" class="add-product">
+            </div>
+           
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>

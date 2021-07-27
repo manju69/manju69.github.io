@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W2D1 page 1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="W2D1.css">
+    </head>
+    <body>
+        <div >
+            <form >
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" placeholder="Enter Email" class="textColor" size="60" maxlength="60"><br>
+                <span class="textColor">We'll never share your email with anyone else</span><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Password" class="textColor" size="60" 
+                    maxlength="60" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{10,}"
+                    title="At least 10 characters, at least one number, one upper case and one lower case"><br>
+                <label for="url">Website url</label> <br>
+                <input type="text" id="url" name="" pattern="https?://.+" title="Please enter the url" placeholder="Enter URL"> <br>
+                <input type="checkbox" id="checkMeOut">
+                <label for="checkMeOut">Check me out</label><br>
+                <input type="submit" value="Submit" class="submitButton">
+                
+            </form>
+        </div>
+    </body>
+
+</html>
+

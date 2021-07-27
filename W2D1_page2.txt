@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="W2D1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
+
+    <script src="code.js"></script>
+    <script src="tests.js"></script>
+    <script src="W2D1.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
+    <div>
+        <form >
+            <label for="email">Email Address</label><br>
+            <input type="text" id="email" value="Enter Email" class="textColor" size="60" maxlength="60" pattern=""><br>
+            <span class="textColor">We'll never share your email with anyone else</span><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="passWord" value="Password" class="textColor" size="60" maxlength="60" pattern=".*{,10}\d+[a-z]+[A-Z]+" title="At least 10 characters, at least one number, one upper case and one lower case"><br>
+            <input type="checkbox" id="checkMeOut">
+            <label for="checkMeOut">Check me out</label><br>
+            <input type="submit" value="Submit" class="submitButton">
+            <input type="url" name="" pattern="https?://.+" title="Please enter the url">
+        </form>
+    </div>
+</body>
+
+</html>
