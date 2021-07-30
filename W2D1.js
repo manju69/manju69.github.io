@@ -16,6 +16,21 @@ function filterLongWords(words =[],i){
     return words.filter(element=>element.length>i);
 }
 
+// function longestNoSpace(){
+    
+//     return arguments.split(" ").filter(e=>e!=" ").reduce(maxLength);
+// }
+
+// function maxLength(a,b){
+//     return (a.length>b.length)?a.length:b.length;
+// }
+// describe("longestNoSpace", function () {
+//     it("takes array of number, and returns the sum of array",
+//         function () {
+//             assert.equal(7, longestNoSpace("this is the longest array"));
+//         });
+// });
+
 describe("sum", function () {
     it("takes array of number, and returns the sum of array",
         function () {
