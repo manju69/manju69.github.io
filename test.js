@@ -48,25 +48,29 @@ describe ("savingsgetInterest", function(){
     )
 });
 
-describe ("savingsgetBalance", function(){
+describe ("SavingAccount_getBalance", function(){
     it("returns the amount on the savings account plus interest", function(){
         assert.equal(savingAccount.getBalance(),99000);
     }
     )
 });
 
-describe("toString", function () {
+describe("SavingAccount_toString", function () {
     it("return string that contain balance and account number information",
         function () { 
-            assert.equal("Account 12345: balance 2450.7: Interest 5", savingAccount.toString());
-            assert.throws()
-        });
-});
-
-describe("endOfMonth", function () {
-    it("returns and empty string",
-        function () { 
-            assert.equal("Interest added SavingsAccount 2: balance: 2450.7 interest: 5", savingAccount.endOfMonth());
+            assert.equal("Saving Account 62471: balance 99000: Interest 10", savingAccount.toString());
             //assert.throws()
         });
 });
+
+checkingAccount.deposit(10000);
+checkingAccount.withdraw(10300);
+
+describe ("Checking_getOverdraft", function(){
+    it("returns the overdraft limit of the account", function(){
+        assert.equal(checkingAccount.getOverdraft(),"300");
+    }
+    )
+});
+
+
