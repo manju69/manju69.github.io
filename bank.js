@@ -12,6 +12,7 @@ class Bank{
     addAccount(){
         let account = new Account(nextNumber++);
         this._accounts.push(account);
+        console.log(account.getNumber());
         return account.getNumber();
     }
 
@@ -41,6 +42,7 @@ class Bank{
         let output="";
         for(let i=0;i<this._accounts.length;i++){
             output += this._accounts[i].join(" \n");
+            console.log(output);
         }
         return output;
     }

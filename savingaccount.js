@@ -12,8 +12,7 @@ class SavingAccount extends Account {
         this._interest = interest;
     }
     addInterest(){
-       amountWithInterest =this._balance+= this._balance * interest / 100;
-       this.deposit(amountWithInterest);
+       this._balance += (this._balance * this._interest / 100);
     }
 
     toString() {

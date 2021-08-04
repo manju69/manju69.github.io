@@ -74,3 +74,70 @@ describe ("Checking_getOverdraft", function(){
 });
 
 
+describe ("addAccount", function(){
+    it("Adds an account in the bank array", function(){
+        assert.equal(bank.addAccount(),1);
+    }
+    )
+});
+
+describe ("addAccount", function(){
+    it("Adds an account", function(){
+        assert.equal(bank.addAccount(),2);
+    }
+    )
+});
+
+describe ("addsavingAccount", function(){
+    it("Adds an account", function(){
+        assert.equal(bank.addSavingsAccount(12),3);
+    }
+    )
+});
+
+describe ("addcheckingAccount", function(){
+    it("Adds an account", function(){
+        assert.equal(bank.addCheckingAccount(200),4);
+    }
+    )
+});
+
+
+describe ("closeAccount", function(){
+    it("closes an account", function(){
+        assert.equal(bank.closeAccount(1),"account closed");
+    }
+    )
+});
+
+describe ("closeAccount", function(){
+    it("closes an account", function(){
+        assert.equal(bank.closeAccount(4),"account not found");
+    }
+    )
+});
+
+
+
+let resultstr="Account 1: balance 0the savings Account 3 :balance 0 interest 12checking Account: 4 :balance 0 :overdraft limit 200";
+
+describe ("AccountReport", function(){
+    it("gives an account report", function(){
+        assert.equal(bank.accountReport(),resultstr);
+    }
+    )
+});
+
+let returnString = "Account 1: balance 0the interest added the savings Account 3 :balance 0 interest 12Warning, low balance checking Account: 4:balance 0 :overdraft limit 200"
+describe("endOfMonth", function(){
+    it(" gives status of accounts at the end of the month",function(){
+        let myBankarray=myBank.getAccounts();
+for (let i=0;i<myBankarray.length;i++){
+    let acc=myBank.getAccount(myBankarray[i].getNumber())
+    acc.deposit(10000);
+    console.log(acc);
+}
+        assert.equal(myBank.endOfMonth(),returnString)
+    })
+})
+
