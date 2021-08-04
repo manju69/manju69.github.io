@@ -18,9 +18,9 @@ function myFunctionTest(expected, found) {
   // assert test
   console.assert(max(20, 10)===20, 'Expected output of max(20,10) is 20');
   console.assert(maxOfThree(20, 10,30)===30, "Expected output of maxOfThree(20,10,30) is 30");
-  console.assert(isVowel('a')===true, "Expected output of isVowel('a') is true  ");
-  console.assert(sum([20, 10]===30, "Expected output of sum([20,10]) is 30  " ));
-  console.assert(multiply([20, 10]===200, "Expected output of multiply([20,10]) is 200  ");
+  console.assert(isVowel('a')===true, "Expected output of isVowel('a') is true");
+  console.assert(sum([20, 10])===30, "Expected output of sum([20,10]) is 30");
+  console.assert(multiply([20, 10]===200, "Expected output of multiply([20,10]) is 200  "));
   console.assert(reverse('manju')==='ujnam', "Expected output of reverse('manju') is 'ujnam'");
   console.assert(findLongestWord(['this','is','the','longest','word'])===7, "Expected output of max(20,10) is 20");
   console.assert(filterLongWords(['this','is','the','longest','word'])==='longest', "Expected output of max(20,10) is 20");
