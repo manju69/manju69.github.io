@@ -34,7 +34,6 @@ class Bank{
         }
         else
          return "account not founr;"
-        
 
     }
 

@@ -1,0 +1,26 @@
+.circle{
+    border: 2pt solid black;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    align-self: center;
+    /* animation-name: growRadius;
+    animation-duration: 11.25s;
+    animation-iteration-count: infinite; */
+}
+/* @keyframes growRadius{
+    from{width: 50px;
+        height: 50px;}
+    to{width: 500px;
+        height: 500px;}
+} */
+
+.buttomLeft{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
