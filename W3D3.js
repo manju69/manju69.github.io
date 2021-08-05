@@ -1,7 +1,7 @@
 var win = true;
 $(function () {
   $("#start").click(reset);
-  $("#maze").hover(
+  $("#maze").mouseover(
     function(){
       $("#maze div.boundary").on();
       $("#end").on();
@@ -12,12 +12,10 @@ $(function () {
     }
     );
 });
-  var statusText = $("#status").text();
 
-  function red() {
+  function looseCase() {
     win = false;
-    statusText = "Sorry, you lost";
-    $("#status").html(statusText).css("color", "red");
+    $("#status").html("Sorry, you lost").css("color", "red");
     $(".boundary").each(function () {
       $(this).addClass("youlose");
     });
@@ -25,17 +23,15 @@ $(function () {
 
   function reset() {
     win = true;
-    statusText = "Game Started!";
-    $("#status").html(statusText).css("color", "green");
+    $("#status").html("Game Started!").css("color", "green");
     $(".boundary").each(function () {
       $(this).removeClass("youlose");
     });
-    $("#maze div.boundary").on("mouseover", red);
+    $("#maze div.boundary").on("mouseover", looseCase);
     $("#end").on("mouseover", end);
   }
   function end() {
-    statusText = "Game End!";
-    $("#status").html(statusText).css("color", "blue");
+    $("#status").html("Game End!").css("color", "blue");
     let currentStatus = (win == true) ? "You win! :]" : "Sorry, you lost! :[";
     alert(currentStatus);
     $(this).off();
