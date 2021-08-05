@@ -8,7 +8,7 @@ $(document).ready(function(){
             $(this).removeClass("youlose");
         });
         $("#maze div.boundary").mouseover(loose);
-        $("#end").mouseover(end);
+        $("#end").mouseenter(end);
     }
     function loose(){
         win = false;
@@ -19,10 +19,10 @@ $(document).ready(function(){
     }
 
     function end(){
-        $("#status").html("Game End!!").css("color", "green");
-            let status  = (win)?"You win! :]":"Sorry, You lost :[";
-            alert(status);
-            $("#maze div.boundary").off("mouseover");
-            $("#end").off("mouseover");
+         $("#status").html("Game End!!").css("color", "green");
+        let status  = (win)?"You win! :]":"Sorry, You lost :[";
+        alert(status);
+        $("#maze div.boundary").off("mouseover");
+        $("#end").off("mouseenter");
     }
 });
