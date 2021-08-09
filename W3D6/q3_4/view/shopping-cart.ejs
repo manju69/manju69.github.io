@@ -1,0 +1,9 @@
+<%- include('header.ejs')%>
+ <title>Shopping Cart</title>
+ </head>
+
+ <body>
+    <% for (var i = 0; i < products.length; i++) { %>
+        <%- include("product-details.ejs", products[i]) %>
+        <% } %>
+<%- include('footer.ejs')%>
