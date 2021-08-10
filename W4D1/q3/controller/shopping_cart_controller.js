@@ -5,7 +5,9 @@ const Product = require("../model/product");
 // const app = express();
 
 // app.use(session({
-//     secret:'add product to cart',    
+//     secret:'add product to cart', 
+//     resave:false,
+//     saveUninitialized:false,   
 // }));
 
 // app.use((req,res)=>{
@@ -20,7 +22,7 @@ exports.addProduct = (req, res) => {
     res.render('shopping_cart', ShoppingCart.getProducts());
 };
 
-// exports.addProduct = (req, res) => {
+// exports.addSession = (req, res) => {
 //     req.session.views[req.body.id] =Product.getProduct(req.body.id);
 //     res.redirect(303, '/cart');
 // };

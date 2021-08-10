@@ -5,6 +5,7 @@ module.exports = class Product {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.quantity = 0;
     }
     save() {
         Product.products.push(this);
