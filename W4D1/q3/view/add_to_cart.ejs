@@ -1,0 +1,13 @@
+<%- include('header.ejs')%>
+ <title>Add to Cart</title>
+ </head>
+ <body>
+     <h5>Cart list</h5>
+    <% for (var i = 0; i < products.length; i++) { %>
+         <ul>
+             <li><%= products[i].id %>.<%= products[i].name %></a></li>
+             
+         </ul>
+
+        <% } %>
+<%- include('footer.ejs')%>

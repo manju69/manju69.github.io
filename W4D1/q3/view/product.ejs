@@ -1,0 +1,13 @@
+<%- include('header.ejs')%>
+ <title>Product <%= id %></title>
+ </head>
+ <body>
+    <h2><%= name %></h2>
+    <p>Product Description: <%= description %></p>
+    <p>Product Price: <%= price %></p>
+     <form action="addToCart" method="POST">
+        <input type="hidden" value="<%= id %>" name="id"></hidden>
+        <button type="submit">Add to Cart</button>
+    </form>
+<%- include('footer.ejs')%>
+

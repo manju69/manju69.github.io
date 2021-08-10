@@ -1,0 +1,14 @@
+<%- include('header.ejs')%>
+ <title>Home page</title>
+ </head>
+ <body>
+     <h5>Products for sale</h5>
+    <% for (var i = 0; i < products.length; i++) { %>
+         <ul>
+             <li>  <a href="/<%= products[i].id %>"><%= products[i].id %>.<%= products[i].name %></a></li>
+             
+         </ul>
+
+        <% } %>
+    
+<%- include('footer.ejs')%>
