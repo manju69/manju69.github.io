@@ -7,10 +7,10 @@ const hour = date.getHours();
 app.use(express.urlencoded({extended: false}));
 
 if(hour>6 && hour<18){
-    app.use('/css', express.static(path.join(__dirname, 'css/day.css')));
+    app.use('/css/index.css', express.static(path.join(__dirname, 'css/day.css')));
 }
 else{
-    app.use('/css', express.static(path.join(__dirname, 'css/night.css')));
+    app.use('/css/index.css', express.static(path.join(__dirname, 'css/night.css')));
 }
 app.get('/',(req,res)=>{
 res.sendFile(__dirname+"/index.html");
