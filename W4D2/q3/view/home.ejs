@@ -1,0 +1,28 @@
+<%- include('header.ejs')%>
+ <title>Home page</title>
+ <script src="/js/index.js"></script>
+ <script>
+     var addedProducts=[]
+     function addProduct (id){
+        console.log("clicked "+ id);
+        $.post("/addToCart",{id: id },(name)=>{
+            $('#response').html('successfully added product: ' + name);
+        })
+        .fail((error)=>{
+            $('#response').html('failed to added product');
+        });
+    };
+ </script>
+ </head>
+ <body>
+     <h5>Products for sale</h5>
+     <div style = "display:flex">
+        <% for (var i = 0; i < products.length; i++) { %>
+        <%- include('product.ejs', {...products[i]})%>
+        <% } %>
+    </div>
+    <a href='/viewCart'>View Cart</a>
+    <div id ="response"></div>
+
+
+<%- include('footer.ejs')%>

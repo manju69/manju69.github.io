@@ -1,0 +1,15 @@
+<%- include('header.ejs')%>
+ <title>Shopping Cart</title>
+ <script>
+     console.log(products)
+ </script>
+
+ </head>
+
+ <body>
+    <h5>Products added to cart</h5>
+        <% for (var i = 0; i < products.length; i++) { %>
+        <%- include("product-details.ejs", {...products[i]}) %>
+        <a href="/<%= products[i].id %>">Go Back</a>
+        <% } %>
+<%- include('footer.ejs')%>

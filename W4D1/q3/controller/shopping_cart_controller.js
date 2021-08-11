@@ -4,18 +4,18 @@ const Product = require("../model/product");
 // const session = require('express-session');
 // const app = express();
 
-// app.use(session({
-//     secret:'add product to cart', 
-//     resave:false,
-//     saveUninitialized:false,   
-// }));
+app.use(session({
+    secret:'add product to cart', 
+    resave:false,
+    saveUninitialized:false,   
+}));
 
-// app.use((req,res)=>{
-// if(!req.session.views){
-//     req.session.views = {};
-// }
-// next();
-// });
+app.use((req,res)=>{
+if(!req.session.views){
+    req.session.views = {};
+}
+next();
+});
 //add product in the product array
 exports.addProduct = (req, res) => {
     ShoppingCart.addToCart(Product.getProduct(req.body.id))

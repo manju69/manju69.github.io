@@ -13,8 +13,8 @@ router.get('/:id', productController.getProduct);
 
 
 router.post('/addToCart', shoppingcartController.addProduct);
-router.post('/addToCart', shoppingcartController.addSession);
 
-router.get("/cart",shoppingcartController.displayCart);
+// router.post('/addToCart', shoppingcartController.addSession);
+// router.get("/cart",shoppingcartController.displayCart);
 
 module.exports = router;
